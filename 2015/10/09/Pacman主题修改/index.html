@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>ASP.NET MVC学习 | 崔杰的博客</title>
+    <title>Pacman主题修改 | 崔杰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="cuijie">
     
-    <meta name="description" content="十一假期主要在看MVC高级编程，感觉对MVC的认识更深入了。
-ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，主要用来创建网站应用。
-根据我的认识，这是一个服务器端MVC，在服务器端渲染好页面后，把整个页面返回给前端展示。而且它的模版、视图、控制器都是密切合作的，">
+    <meta name="description" content="昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。
+下面这两个是有问题的，在作者网站的主题介绍的评论里看到了解决方法。
+头像路径要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的img/author.jpg">
     
     
     
@@ -69,15 +69,15 @@ ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，�
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/08/ASP-NET-MVC学习/" title="ASP.NET MVC学习" itemprop="url">ASP.NET MVC学习</a>
+      <a href="/2015/10/09/Pacman主题修改/" title="Pacman主题修改" itemprop="url">Pacman主题修改</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://tech.cuijie.me" title="cuijie">cuijie</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-10-07T16:09:30.000Z" itemprop="datePublished">2015-10-08</time>
-    更新日期:<time datetime="2015-10-08T16:10:16.000Z" itemprop="dateModified">2015-10-09</time>
+    <time datetime="2015-10-08T16:10:55.000Z" itemprop="datePublished">2015-10-09</time>
+    更新日期:<time datetime="2015-10-08T16:33:06.000Z" itemprop="dateModified">2015-10-09</time>
     
   </p>
 </header>
@@ -86,30 +86,39 @@ ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，�
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		
+		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#头像路径"><span class="toc-number">1.</span> <span class="toc-text">头像路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮设置_还没试过"><span class="toc-number">2.</span> <span class="toc-text">代码高亮设置 还没试过</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">3.</span> <span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评论"><span class="toc-number">4.</span> <span class="toc-text">评论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站内搜索"><span class="toc-number">5.</span> <span class="toc-text">站内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站统计"><span class="toc-number">6.</span> <span class="toc-text">网站统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol>
 		</div>
 		
-		<p>十一假期主要在看MVC高级编程，感觉对MVC的认识更深入了。</p>
-<p>ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，主要用来创建网站应用。</p>
-<p>根据我的认识，这是一个服务器端MVC，在服务器端渲染好页面后，把整个页面返回给前端展示。而且它的模版、视图、控制器都是密切合作的，而且看了很多章之后，感觉即使不用js也可以创建一个网站了。</p>
-<p>它是一个完整的Web框架，提供了很多功能，而且基本都是可扩展的，而我之前很多都没用过，比如HTML辅助方法、数据注解、验证、授权等。而且有很多现成的类库可以直接拿来用。</p>
-<p>最近做的一些项目，前端代码都是运行在客户端，后台主要用来提供程序运行的数据，跟上面的MVC是完全不同的模式。所以我们后台都是用了Web API。当然也是可以用MVC的，但是Web API本来就是针对Web服务的，应该做了一些针对性的优化，我还不太了解。</p>
-<p>还是要不断完善自己的知识体系。</p>
+		<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
+<p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" target="_blank" rel="external">作者网站</a>的主题介绍的评论里看到了解决方法。</p>
+<h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的img/author.jpg被整合查看图片url是css/img/author.jpg，所以加上/就好了。<br>修改方法如下：<br>把author_img: img/author.jpg改成author_img: /img/author.jpg</p>
+<h3 id="代码高亮设置_还没试过">代码高亮设置 还没试过</h3><p>source/css/_base/variable.styl 中找到highlight = hexo-config(“highlight.enable”)注释掉就好了</p>
+<h3 id="RSS">RSS</h3><p>需要安装插件npm install <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">hexo-generator-feed</a><br>编辑themes/light/_config.yml，修改rss: “/atom.xml”</p>
+<h3 id="评论">评论</h3><p>原来的多说评论，代码版本有点旧，更新成了新版的</p>
+<h3 id="站内搜索">站内搜索</h3><p>站内搜索改用<a href="https://swiftype.com" target="_blank" rel="external">swiftype</a></p>
+<h3 id="网站统计">网站统计</h3><p>添加<a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a></p>
+<h3 id="其他">其他</h3><p>分享里去掉了facebook和twitter</p>
+<p>另外，所有js代码都是在after_footer文件里加载的</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/hexo/">hexo</a>
+  </div>
+
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/ASP-NET-MVC/">ASP.NET MVC</a>
+  <a class="article-category-link" href="/categories/hexo/">hexo</a>
 </div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://tech.cuijie.me/2015/10/08/ASP-NET-MVC学习/" data-title="ASP.NET MVC学习 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
+  <div data-url="http://tech.cuijie.me/2015/10/09/Pacman主题修改/" data-title="Pacman主题修改 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
   </div>
 
 </div>
@@ -118,21 +127,21 @@ ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，�
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/10/09/Pacman主题修改/" title="Pacman主题修改">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  Pacman主题修改</span>
+
+<div class="next">
+<a href="/2015/10/08/ASP-NET-MVC学习/"  title="ASP.NET MVC学习">
+ <strong>NEXT:</strong><br/> 
+ <span>ASP.NET MVC学习
+</span>
 </a>
 </div>
-
 
 </nav>
 
 	
 	<section class="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="post-ASP-NET-MVC学习" data-title="ASP.NET MVC学习" data-url="http://tech.cuijie.me/2015/10/08/ASP-NET-MVC学习/"></div>
+		<div class="ds-thread" data-thread-key="post-Pacman主题修改" data-title="Pacman主题修改" data-url="http://tech.cuijie.me/2015/10/09/Pacman主题修改/"></div>
 		<!-- 多说评论框 end -->
 	</section>
 
@@ -141,7 +150,7 @@ ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，�
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#头像路径"><span class="toc-number">1.</span> <span class="toc-text">头像路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮设置_还没试过"><span class="toc-number">2.</span> <span class="toc-text">代码高亮设置 还没试过</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">3.</span> <span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评论"><span class="toc-number">4.</span> <span class="toc-text">评论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站内搜索"><span class="toc-number">5.</span> <span class="toc-text">站内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站统计"><span class="toc-number">6.</span> <span class="toc-text">网站统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol>
   </div>
 
 
