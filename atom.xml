@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[崔杰的博客]]></title>
+  <subtitle><![CDATA[学习 分享]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://tech.cuijie.me/"/>
+  <updated>2015-10-07T16:09:56.000Z</updated>
+  <id>http://tech.cuijie.me/</id>
+  
+  <author>
+    <name><![CDATA[cuijie]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ASP.NET MVC学习]]></title>
+    <link href="http://tech.cuijie.me/2015/10/08/ASP-NET-MVC%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://tech.cuijie.me/2015/10/08/ASP-NET-MVC学习/</id>
+    <published>2015-10-07T16:09:30.000Z</published>
+    <updated>2015-10-07T16:09:56.000Z</updated>
+    <content type="html"><![CDATA[<p>十一假期主要在看MVC高级编程，感觉对MVC的认识更深入了。</p>
+<p>ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，主要用来创建网站应用。</p>
+<p>根据我的认识，这是一个服务器端MVC，在服务器端渲染好页面后，把整个页面返回给前端展示。而且它的模版、视图、控制器都是密切合作的，而且看了很多章之后，感觉即使不用js也可以创建一个网站了。</p>
+<p>它是一个完整的Web框架，提供了很多功能，而且基本都是可扩展的，而我之前很多都没用过，比如HTML辅助方法、数据注解、验证、授权等。而且有很多现成的类库可以直接拿来用。</p>
+<p>最近做的一些项目，前端代码都是运行在客户端，后台主要用来提供程序运行的数据，跟上面的MVC是完全不同的模式。所以我们后台都是用了Web API。当然也是可以用MVC的，但是Web API本来就是针对Web服务的，应该做了一些针对性的优化，我还不太了解。</p>
+<p>还是要不断完善自己的知识体系。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>十一假期主要在看MVC高级编程，感觉对MVC的认识更深入了。</p>
+<p>ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，主要用来创建网站应用。</p>
+<p>根据我的认识，这是一个服务器端MVC，在服务器端渲染好页面后，把整个页面返回]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
