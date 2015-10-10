@@ -77,7 +77,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-10-08T16:10:55.000Z" itemprop="datePublished">2015-10-09</time>
-    更新日期:<time datetime="2015-10-10T15:57:02.000Z" itemprop="dateModified">2015-10-10</time>
+    更新日期:<time datetime="2015-10-10T16:21:21.000Z" itemprop="dateModified">2015-10-11</time>
     
   </p>
 </header>
@@ -91,9 +91,9 @@
 		
 		<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
 <p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" target="_blank" rel="external">作者网站</a>的主题介绍的评论里看到了解决方法。</p>
-<h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的img/author.jpg被整合查看图片url是css/img/author.jpg，所以加上/就好了。<br>修改方法如下：<br>把author_img: img/author.jpg改成author_img: /img/author.jpg</p>
-<h3 id="代码高亮设置_还没试过">代码高亮设置 还没试过</h3><p>source/css/_base/variable.styl 中找到highlight = hexo-config(“highlight.enable”)注释掉就好了</p>
-<h3 id="RSS">RSS</h3><p>需要安装插件npm install <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">hexo-generator-feed</a><br>编辑themes/light/_config.yml，修改rss: “/atom.xml”</p>
+<h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的<code>img/author.jpg</code>被整合查看图片url是<code>css/img/author.jpg</code>，所以加上/就好了。<br>修改方法如下：<br>把<code>author_img: img/author.jpg</code>改成<code>author_img: /img/author.jpg</code></p>
+<h3 id="代码高亮设置_还没试过">代码高亮设置 还没试过</h3><p><code>source/css/_base/variable.styl</code>中找到<code>highlight = hexo-config(&quot;highlight.enable&quot;)</code>注释掉就好了</p>
+<h3 id="RSS">RSS</h3><p>需要安装<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">插件</a>：<code>npm install hexo-generator-feed</code><br>编辑<code>themes/light/_config.yml</code>，修改<code>rss: &quot;/atom.xml&quot;</code></p>
 <h3 id="评论">评论</h3><p>原来的多说评论，代码版本有点旧，更新成了新版的</p>
 <h3 id="站内搜索">站内搜索</h3><p>站内搜索改用<a href="https://swiftype.com" target="_blank" rel="external">swiftype</a></p>
 <h3 id="网站统计">网站统计</h3><p>添加<a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a></p>
@@ -105,7 +105,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/hexo/">hexo</a>
+  <span></span> <a href="/tags/blog/">blog</a><a href="/tags/hexo/">hexo</a>
   </div>
 
 
@@ -173,7 +173,7 @@
 		
 			<li><a href="/categories/ASP-NET-MVC/" title="ASP.NET MVC">ASP.NET MVC<sup>1</sup></a></li>
 		
-			<li><a href="/categories/blog/" title="blog">blog<sup>1</sup></a></li>
+			<li><a href="/categories/blog/" title="blog">blog<sup>2</sup></a></li>
 		
 		</ul>
 </div>
@@ -184,7 +184,7 @@
 	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/blog/" title="blog">blog<sup>1</sup></a></li>
+			<li><a href="/tags/blog/" title="blog">blog<sup>2</sup></a></li>
 		
 			<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
 		

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[学习 分享]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://tech.cuijie.me/"/>
-  <updated>2015-10-10T15:56:26.000Z</updated>
+  <updated>2015-10-10T16:11:19.000Z</updated>
   <id>http://tech.cuijie.me/</id>
   
   <author>
@@ -19,15 +19,16 @@
     <link href="http://tech.cuijie.me/2015/10/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     <id>http://tech.cuijie.me/2015/10/10/个人博客搭建/</id>
     <published>2015-10-10T15:28:34.000Z</published>
-    <updated>2015-10-10T15:56:26.000Z</updated>
+    <updated>2015-10-10T16:11:19.000Z</updated>
     <content type="html"><![CDATA[<p>本文主要介绍自己在搭建博客中用到的工具。</p>
 <h3 id="服务器">服务器</h3><p>博客部署在GitHub上，它提供了<a href="https://pages.github.com/" target="_blank" rel="external">Pages</a>功能，很不错，只要有一个GitHub账号就可以了。</p>
-<h3 id="域名">域名</h3><p>在万网注册的，其实用了GitHub <a href="https://pages.github.com/" target="_blank" rel="external">Pages</a>，域名不用也可以。</p>
+<h3 id="域名">域名</h3><p>在万网注册的，其实用了GitHub <a href="https://pages.github.com/" target="_blank" rel="external">Pages</a>，域名不用也可以。如果用的话，只要在博客根目录放一个CNAME文件就行了。</p>
 <h3 id="博客框架">博客框架</h3><p>使用了<a href="http://www.hexo.io" target="_blank" rel="external">Hexo</a>静态博客框架，很方便，它构建了node上，好像是一个台湾的同学写的。<br>博客主题用的<a href="https://github.com/A-limon/pacman" target="_blank" rel="external">pacman</a>，不过有些地方需要根据自己的需要修改。</p>
+<h3 id="图片存储">图片存储</h3><p>使用<a href="http://www.qiniu.com/" target="_blank" rel="external">七牛</a>存储图片，注册一个免费账号就足够用了。</p>
 <h3 id="搜索">搜索</h3><p>使用了<a href="https://swiftype.com" target="_blank" rel="external">Swiftype</a>做站内搜索，很容易使用，网上教程也很容易找到。</p>
+<h3 id="404页面">404页面</h3><p>用的是腾讯的<a href="http://www.qq.com/404/" target="_blank" rel="external">公益404</a></p>
 <h3 id="评论">评论</h3><p><a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></p>
 <h3 id="统计">统计</h3><p><a href="http://tongji.baidu.com" target="_blank" rel="external">百度统计</a></p>
-<h3 id="图片">图片</h3><p>使用<a href="http://www.qiniu.com/" target="_blank" rel="external">七牛</a>存储图片，注册一个免费账号就足够用了。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>本文主要介绍自己在搭建博客中用到的工具。</p>
@@ -38,6 +39,8 @@
     
       <category term="hexo" scheme="http://tech.cuijie.me/tags/hexo/"/>
     
+      <category term="blog" scheme="http://tech.cuijie.me/categories/blog/"/>
+    
   </entry>
   
   <entry>
@@ -45,12 +48,12 @@
     <link href="http://tech.cuijie.me/2015/10/09/Pacman%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/"/>
     <id>http://tech.cuijie.me/2015/10/09/Pacman主题修改/</id>
     <published>2015-10-08T16:10:55.000Z</published>
-    <updated>2015-10-10T15:57:02.000Z</updated>
+    <updated>2015-10-10T16:21:21.000Z</updated>
     <content type="html"><![CDATA[<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
 <p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" target="_blank" rel="external">作者网站</a>的主题介绍的评论里看到了解决方法。</p>
-<h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的img/author.jpg被整合查看图片url是css/img/author.jpg，所以加上/就好了。<br>修改方法如下：<br>把author_img: img/author.jpg改成author_img: /img/author.jpg</p>
-<h3 id="代码高亮设置_还没试过">代码高亮设置 还没试过</h3><p>source/css/_base/variable.styl 中找到highlight = hexo-config(“highlight.enable”)注释掉就好了</p>
-<h3 id="RSS">RSS</h3><p>需要安装插件npm install <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">hexo-generator-feed</a><br>编辑themes/light/_config.yml，修改rss: “/atom.xml”</p>
+<h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的<code>img/author.jpg</code>被整合查看图片url是<code>css/img/author.jpg</code>，所以加上/就好了。<br>修改方法如下：<br>把<code>author_img: img/author.jpg</code>改成<code>author_img: /img/author.jpg</code></p>
+<h3 id="代码高亮设置_还没试过">代码高亮设置 还没试过</h3><p><code>source/css/_base/variable.styl</code>中找到<code>highlight = hexo-config(&quot;highlight.enable&quot;)</code>注释掉就好了</p>
+<h3 id="RSS">RSS</h3><p>需要安装<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">插件</a>：<code>npm install hexo-generator-feed</code><br>编辑<code>themes/light/_config.yml</code>，修改<code>rss: &quot;/atom.xml&quot;</code></p>
 <h3 id="评论">评论</h3><p>原来的多说评论，代码版本有点旧，更新成了新版的</p>
 <h3 id="站内搜索">站内搜索</h3><p>站内搜索改用<a href="https://swiftype.com" target="_blank" rel="external">swiftype</a></p>
 <h3 id="网站统计">网站统计</h3><p>添加<a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a></p>
@@ -61,6 +64,8 @@
     <![CDATA[<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
 <p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" targ]]>
     </summary>
+    
+      <category term="blog" scheme="http://tech.cuijie.me/tags/blog/"/>
     
       <category term="hexo" scheme="http://tech.cuijie.me/tags/hexo/"/>
     
