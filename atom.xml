@@ -4,7 +4,7 @@
   <subtitle><![CDATA[学习 分享]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://tech.cuijie.me/"/>
-  <updated>2015-10-08T16:33:06.000Z</updated>
+  <updated>2015-10-10T15:45:29.000Z</updated>
   <id>http://tech.cuijie.me/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[个人博客搭建]]></title>
+    <link href="http://tech.cuijie.me/2015/10/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>http://tech.cuijie.me/2015/10/10/个人博客搭建/</id>
+    <published>2015-10-10T15:28:34.000Z</published>
+    <updated>2015-10-10T15:45:29.000Z</updated>
+    <content type="html"><![CDATA[<p>本文主要介绍自己搭建博客中用到的工具。</p>
+<h3 id="服务器">服务器</h3><p>博客部署在GitHub上，它提供了<a href="https://pages.github.com/" target="_blank" rel="external">Pages</a>功能，很不错，只要有一个GitHub账号就可以了。</p>
+<h3 id="域名">域名</h3><p>在万网注册的，其实用了GitHub <a href="https://pages.github.com/" target="_blank" rel="external">Pages</a>，域名不用也可以。</p>
+<h3 id="博客框架">博客框架</h3><p>使用了<a href="http://www.hexo.io" target="_blank" rel="external">Hexo</a>静态博客框架，很方便，它构建了node上，好像是一个台湾的同学写的。</p>
+<h3 id="搜索">搜索</h3><p>使用了<a href="https://swiftype.com" target="_blank" rel="external">Swiftype</a></p>
+<h3 id="评论">评论</h3><p><a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></p>
+<h3 id="统计">统计</h3><p><a href="http://tongji.baidu.com" target="_blank" rel="external">百度统计</a></p>
+<h3 id="图片">图片</h3><p><a href="http://www.qiniu.com/" target="_blank" rel="external">七牛</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本文主要介绍自己搭建博客中用到的工具。</p>
+<h3 id="服务器">服务器</h3><p>博客部署在GitHub上，它提供了<a href="https://pages.github.com/" target="_blank" rel="external">Pages]]>
+    </summary>
+    
+      <category term="blog" scheme="http://tech.cuijie.me/tags/blog/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Pacman主题修改]]></title>
