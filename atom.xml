@@ -48,7 +48,7 @@
     <link href="http://tech.cuijie.me/2015/10/09/Pacman%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/"/>
     <id>http://tech.cuijie.me/2015/10/09/Pacman主题修改/</id>
     <published>2015-10-08T16:10:55.000Z</published>
-    <updated>2015-10-10T16:21:21.000Z</updated>
+    <updated>2015-10-10T16:55:02.000Z</updated>
     <content type="html"><![CDATA[<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
 <p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" target="_blank" rel="external">作者网站</a>的主题介绍的评论里看到了解决方法。</p>
 <h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的<code>img/author.jpg</code>被整合查看图片url是<code>css/img/author.jpg</code>，所以加上/就好了。<br>修改方法如下：<br>把<code>author_img: img/author.jpg</code>改成<code>author_img: /img/author.jpg</code></p>

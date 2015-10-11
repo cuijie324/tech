@@ -81,22 +81,23 @@ ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，�
     
   </p>
 </header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		
-		</div>
-		
-		<p>十一假期主要在看MVC高级编程，感觉对MVC的认识更深入了。</p>
+		<div class="article-content">
+			
+			
+				<div id="toc" class="toc-article">
+					<strong class="toc-title">文章目录</strong>
+				
+				</div>
+			
+			
+			<p>十一假期主要在看MVC高级编程，感觉对MVC的认识更深入了。</p>
 <p>ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，主要用来创建网站应用。</p>
 <p>根据我的认识，这是一个服务器端MVC，在服务器端渲染好页面后，把整个页面返回给前端展示。而且它的模版、视图、控制器都是密切合作的，而且看了很多章之后，感觉即使不用js也可以创建一个网站了。</p>
 <p>它是一个完整的Web框架，提供了很多功能，而且基本都是可扩展的，而我之前很多都没用过，比如HTML辅助方法、数据注解、验证、授权等。而且有很多现成的类库可以直接拿来用。</p>
 <p>最近做的一些项目，前端代码都是运行在客户端，后台主要用来提供程序运行的数据，跟上面的MVC是完全不同的模式。所以我们后台都是用了Web API。当然也是可以用MVC的，但是Web API本来就是针对Web服务的，应该做了一些针对性的优化，我还不太了解。</p>
 <p>还是要不断完善自己的知识体系。</p>
   
-	</div>
+		</div>
 		<footer class="article-footer clearfix">
 
 
@@ -216,83 +217,84 @@ ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，�
     <script src="/js/jquery-2.1.0.min.js"></script>
 
 <script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
-        
-    }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-});
+	$(document).ready(function(){ 
+	  $('.navbar').click(function(){
+		$('header nav').toggleClass('shownav');
+	  });
+	  var myWidth = 0;
+	  function getSize(){
+		if( typeof( window.innerWidth ) == 'number' ) {
+		  myWidth = window.innerWidth;
+		} else if( document.documentElement && document.documentElement.clientWidth) {
+		  myWidth = document.documentElement.clientWidth;
+		};
+	  };
+	  var m = $('#main'),
+		  a = $('#asidepart'),
+		  c = $('.closeaside'),
+		  o = $('.openaside');
+	  $(window).resize(function(){
+		getSize(); 
+		if (myWidth >= 1024) {
+		  $('header nav').removeClass('shownav');
+		}else
+		{
+		  m.removeClass('moveMain');
+		  a.css('display', 'block').removeClass('fadeOut');
+		  o.css('display', 'none');
+		  
+			$('#toc.toc-aside').css('display', 'none');
+		    
+		}
+	  });
+	  c.click(function(){
+		a.addClass('fadeOut').css('display', 'none');
+		o.css('display', 'block').addClass('fadeIn');
+		m.addClass('moveMain');
+	  });
+	  o.click(function(){
+		o.css('display', 'none').removeClass('beforeFadeIn');
+		a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+		m.removeClass('moveMain');
+	  });
+	  $(window).scroll(function(){
+		o.css("top",Math.max(80,260-$(this).scrollTop()));
+	  });
+	});
 </script>
 
 
 	<script type="text/javascript">
-	$(document).ready(function(){ 
-	  var ai = $('.article-content>iframe'),
-		  ae = $('.article-content>embed'),
-		  t  = $('#toc'),
-		  h  = $('article h2')
-		  ah = $('article h2'),
-		  ta = $('#toc.toc-aside'),
-		  o  = $('.openaside'),
-		  c  = $('.closeaside');
-	  if(ai.length>0){
-		ai.wrap('<div class="video-container" />');
-	  };
-	  if(ae.length>0){
-	   ae.wrap('<div class="video-container" />');
-	  };
-	  if(ah.length==0){
-		t.css('display','none');
-	  }else{
-		c.click(function(){
-		  ta.css('display', 'block').addClass('fadeIn');
+		$(document).ready(function(){ 
+		  var ai = $('.article-content>iframe'),
+			  ae = $('.article-content>embed'),
+			  t  = $('#toc'),
+			  h  = $('article h2')
+			  ah = $('article h2'),
+			  ta = $('#toc.toc-aside'),
+			  o  = $('.openaside'),
+			  c  = $('.closeaside');
+		  if(ai.length>0){
+			ai.wrap('<div class="video-container" />');
+		  };
+		  if(ae.length>0){
+		   ae.wrap('<div class="video-container" />');
+		  };
+		  if(ah.length==0){
+		    //这里打开，显示文字目录 2015.10.11
+			//t.css('display','none');
+		  }else{
+			c.click(function(){
+			  ta.css('display', 'block').addClass('fadeIn');
+			});
+			o.click(function(){
+			  ta.css('display', 'none');
+			});
+			$(window).scroll(function(){
+			  ta.css("top",Math.max(140,320-$(this).scrollTop()));
+			});
+		  };
 		});
-		o.click(function(){
-		  ta.css('display', 'none');
-		});
-		$(window).scroll(function(){
-		  ta.css("top",Math.max(140,320-$(this).scrollTop()));
-		});
-	  };
-	});
 	</script>
 
 
