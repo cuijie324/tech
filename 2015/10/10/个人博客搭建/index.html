@@ -128,6 +128,14 @@
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2015/10/13/Git基本命令/" title="Git基本命令">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Git基本命令</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2015/10/09/Pacman主题修改/"  title="Pacman主题修改">
@@ -168,6 +176,8 @@
 		
 			<li><a href="/categories/blog/" title="blog">blog<sup>2</sup></a></li>
 		
+			<li><a href="/categories/开发工具/" title="开发工具">开发工具<sup>1</sup></a></li>
+		
 		</ul>
 </div>
 
@@ -177,9 +187,13 @@
 	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
+			<li><a href="/tags/Git/" title="Git">Git<sup>1</sup></a></li>
+		
 			<li><a href="/tags/blog/" title="blog">blog<sup>2</sup></a></li>
 		
 			<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
+		
+			<li><a href="/tags/版本控制/" title="版本控制">版本控制<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -315,6 +329,7 @@
 		  encodedUrl = encodeURIComponent(url),
 		  title = $this.attr('data-title'),
 		  tsina = $this.attr('data-tsina');
+	  
 	  var html = [
 	  '<a href="#" class="overlay" id="qrcode"></a>',
 	  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
@@ -323,7 +338,9 @@
 	  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
 	  '<span title="Share to"></span>'
 	  ].join('');
+	  
 	  $this.append(html);
+	  
 	  $('.article-share-qrcode').click(function(){
 		var imgSrc = $('#qrcode-pic').attr('data-src');
 		$('#qrcode-pic').attr('src', imgSrc);
@@ -378,3 +395,4 @@
 
   </body>
 </html>
+
