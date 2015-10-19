@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Pacman主题修改 | 崔杰的博客</title>
+    <title>React Native开发初步 | 崔杰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="cuijie">
     
-    <meta name="description" content="昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。
-下面这两个是有问题的，在作者网站的主题介绍的评论里看到了解决方法。
-头像路径要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的img/author.jpg">
+    <meta name="description" content="今天开始学习React Native开发，记录下自己的学习过程。
+OSX目前React Native需要在苹果系统上开发，我用的是同事帮忙安装的黑苹果，我自己也在虚拟机上安装过，但是有些卡。
+之前没用过苹果，下面这篇文字介绍了OSX的基本操作：开始使用Mac OS X，介绍的还不错。
+安装开发工具首">
     
     
     
@@ -69,15 +70,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/09/Pacman主题修改/" title="Pacman主题修改" itemprop="url">Pacman主题修改</a>
+      <a href="/2015/10/20/React-Native开发初步/" title="React Native开发初步" itemprop="url">React Native开发初步</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://tech.cuijie.me" title="cuijie">cuijie</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-10-08T16:10:55.000Z" itemprop="datePublished">2015-10-09</time>
-    更新日期:<time datetime="2015-10-10T16:55:02.000Z" itemprop="dateModified">2015-10-11</time>
+    <time datetime="2015-10-19T16:24:11.000Z" itemprop="datePublished">2015-10-20</time>
+    更新日期:<time datetime="2015-10-19T16:43:36.000Z" itemprop="dateModified">2015-10-20</time>
     
   </p>
 </header>
@@ -86,40 +87,48 @@
 			
 				<div id="toc" class="toc-article">
 					<strong class="toc-title">文章目录</strong>
-				<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#头像路径"><span class="toc-number">1.</span> <span class="toc-text">头像路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮设置_还没试过"><span class="toc-number">2.</span> <span class="toc-text">代码高亮设置 还没试过</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">3.</span> <span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评论"><span class="toc-number">4.</span> <span class="toc-text">评论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站内搜索"><span class="toc-number">5.</span> <span class="toc-text">站内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站统计"><span class="toc-number">6.</span> <span class="toc-text">网站统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol>
+				<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#OSX"><span class="toc-number">1.</span> <span class="toc-text">OSX</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装开发工具"><span class="toc-number">2.</span> <span class="toc-text">安装开发工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VPN_&_SVN"><span class="toc-number">3.</span> <span class="toc-text">VPN & SVN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建项目"><span class="toc-number">4.</span> <span class="toc-text">创建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">5.</span> <span class="toc-text">其他</span></a></li></ol>
 				</div>
 			
 			
-			<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
-<p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" target="_blank" rel="external">作者网站</a>的主题介绍的评论里看到了解决方法。</p>
-<h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的<code>img/author.jpg</code>被整合查看图片url是<code>css/img/author.jpg</code>，所以加上/就好了。<br>修改方法如下：<br>把<code>author_img: img/author.jpg</code>改成<code>author_img: /img/author.jpg</code></p>
-<h3 id="代码高亮设置_还没试过">代码高亮设置 还没试过</h3><p><code>source/css/_base/variable.styl</code>中找到<code>highlight = hexo-config(&quot;highlight.enable&quot;)</code>注释掉就好了</p>
-<h3 id="RSS">RSS</h3><p>需要安装<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">插件</a>：<code>npm install hexo-generator-feed</code><br>编辑<code>themes/light/_config.yml</code>，修改<code>rss: &quot;/atom.xml&quot;</code></p>
-<h3 id="评论">评论</h3><p>原来的多说评论，代码版本有点旧，更新成了新版的</p>
-<h3 id="站内搜索">站内搜索</h3><p>站内搜索改用<a href="https://swiftype.com" target="_blank" rel="external">swiftype</a></p>
-<h3 id="网站统计">网站统计</h3><p>添加<a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a></p>
-<h3 id="其他">其他</h3><p>分享里去掉了facebook和twitter</p>
-<p>另外，所有js代码都是在after_footer文件里加载的</p>
+			<p>今天开始学习React Native开发，记录下自己的学习过程。</p>
+<h3 id="OSX">OSX</h3><p>目前React Native需要在苹果系统上开发，我用的是同事帮忙安装的黑苹果，我自己也在虚拟机上安装过，但是有些卡。</p>
+<p>之前没用过苹果，下面这篇文字介绍了OSX的基本操作：<a href="http://www.cnblogs.com/chijianqiang/archive/2011/08/03/2126593.html" target="_blank" rel="external">开始使用Mac OS X</a>，介绍的还不错。</p>
+<h3 id="安装开发工具">安装开发工具</h3><p>首先需要安装开发环境，官网上有<a href="http://facebook.github.io/react-native/docs/getting-started.html#content" target="_blank" rel="external">具体介绍</a>，我也是按照这个来的。<br>我只安装了下面三个：</p>
+<ul>
+<li>xcode</li>
+<li>homebrew</li>
+<li>nodejs</li>
+</ul>
+<h3 id="VPN_&amp;_SVN">VPN &amp; SVN</h3><p>VPN：直接设置连接就可以了<br>SVN：OSX本身自带命名行的SVN</p>
+<p>svn checkout ‘path’</p>
+<h3 id="创建项目">创建项目</h3><p>安装完基本工具后，开始开发React Native项目：</p>
+<ul>
+<li><code>npm install -g react-native-cli</code>： 安装命令行工具react-native，只需运行一次</li>
+<li><code>react-native init ProjectName</code>： 初始化一个新项目模版，这个命令会获取所有必须的依赖，里面同时包括ios和android项目。这一步会花很多时间，要下载很多东西，我用了大概40分钟吧。</li>
+</ul>
+<p>接下来就可以通过xcode运行项目了，可以看到一个简单的界面。</p>
+<h3 id="其他">其他</h3><p>一篇介绍<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="external">flex</a>的文章。</p>
   
 		</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/blog/">blog</a><a href="/tags/hexo/">hexo</a>
+  <span></span> <a href="/tags/React-Native/">React Native</a>
   </div>
 
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/blog/">blog</a>
+  <a class="article-category-link" href="/categories/React-Native/">React Native</a>
 </div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://tech.cuijie.me/2015/10/09/Pacman主题修改/" data-title="Pacman主题修改 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
+  <div data-url="http://tech.cuijie.me/2015/10/20/React-Native开发初步/" data-title="React Native开发初步 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
   </div>
 
 </div>
@@ -128,19 +137,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/10/10/个人博客搭建/" title="个人博客搭建">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  个人博客搭建</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/10/08/ASP-NET-MVC学习/"  title="ASP.NET MVC学习">
+<a href="/2015/10/13/Git基本命令/"  title="Git基本命令">
  <strong>NEXT:</strong><br/> 
- <span>ASP.NET MVC学习
+ <span>Git基本命令
 </span>
 </a>
 </div>
@@ -150,7 +151,7 @@
 	
 	<section class="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="post-Pacman主题修改" data-title="Pacman主题修改" data-url="http://tech.cuijie.me/2015/10/09/Pacman主题修改/"></div>
+		<div class="ds-thread" data-thread-key="post-React-Native开发初步" data-title="React Native开发初步" data-url="http://tech.cuijie.me/2015/10/20/React-Native开发初步/"></div>
 		<!-- 多说评论框 end -->
 	</section>
 
@@ -159,7 +160,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#头像路径"><span class="toc-number">1.</span> <span class="toc-text">头像路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮设置_还没试过"><span class="toc-number">2.</span> <span class="toc-text">代码高亮设置 还没试过</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">3.</span> <span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评论"><span class="toc-number">4.</span> <span class="toc-text">评论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站内搜索"><span class="toc-number">5.</span> <span class="toc-text">站内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站统计"><span class="toc-number">6.</span> <span class="toc-text">网站统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#OSX"><span class="toc-number">1.</span> <span class="toc-text">OSX</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装开发工具"><span class="toc-number">2.</span> <span class="toc-text">安装开发工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VPN_&_SVN"><span class="toc-number">3.</span> <span class="toc-text">VPN & SVN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建项目"><span class="toc-number">4.</span> <span class="toc-text">创建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">5.</span> <span class="toc-text">其他</span></a></li></ol>
   </div>
 
 

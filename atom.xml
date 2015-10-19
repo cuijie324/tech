@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[崔杰的博客]]></title>
-  <subtitle><![CDATA[学习 分享]]></subtitle>
+  <subtitle><![CDATA[学习 记录 分享]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://tech.cuijie.me/"/>
-  <updated>2015-10-12T16:47:56.000Z</updated>
+  <updated>2015-10-19T16:43:36.000Z</updated>
   <id>http://tech.cuijie.me/</id>
   
   <author>
@@ -15,17 +15,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[React Native开发初步]]></title>
+    <link href="http://tech.cuijie.me/2015/10/20/React-Native%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5/"/>
+    <id>http://tech.cuijie.me/2015/10/20/React-Native开发初步/</id>
+    <published>2015-10-19T16:24:11.000Z</published>
+    <updated>2015-10-19T16:43:36.000Z</updated>
+    <content type="html"><![CDATA[<p>今天开始学习React Native开发，记录下自己的学习过程。</p>
+<h3 id="OSX">OSX</h3><p>目前React Native需要在苹果系统上开发，我用的是同事帮忙安装的黑苹果，我自己也在虚拟机上安装过，但是有些卡。</p>
+<p>之前没用过苹果，下面这篇文字介绍了OSX的基本操作：<a href="http://www.cnblogs.com/chijianqiang/archive/2011/08/03/2126593.html" target="_blank" rel="external">开始使用Mac OS X</a>，介绍的还不错。</p>
+<h3 id="安装开发工具">安装开发工具</h3><p>首先需要安装开发环境，官网上有<a href="http://facebook.github.io/react-native/docs/getting-started.html#content" target="_blank" rel="external">具体介绍</a>，我也是按照这个来的。<br>我只安装了下面三个：</p>
+<ul>
+<li>xcode</li>
+<li>homebrew</li>
+<li>nodejs</li>
+</ul>
+<h3 id="VPN_&amp;_SVN">VPN &amp; SVN</h3><p>VPN：直接设置连接就可以了<br>SVN：OSX本身自带命名行的SVN</p>
+<p>svn checkout ‘path’</p>
+<h3 id="创建项目">创建项目</h3><p>安装完基本工具后，开始开发React Native项目：</p>
+<ul>
+<li><code>npm install -g react-native-cli</code>： 安装命令行工具react-native，只需运行一次</li>
+<li><code>react-native init ProjectName</code>： 初始化一个新项目模版，这个命令会获取所有必须的依赖，里面同时包括ios和android项目。这一步会花很多时间，要下载很多东西，我用了大概40分钟吧。</li>
+</ul>
+<p>接下来就可以通过xcode运行项目了，可以看到一个简单的界面。</p>
+<h3 id="其他">其他</h3><p>一篇介绍<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="external">flex</a>的文章。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天开始学习React Native开发，记录下自己的学习过程。</p>
+<h3 id="OSX">OSX</h3><p>目前React Native需要在苹果系统上开发，我用的是同事帮忙安装的黑苹果，我自己也在虚拟机上安装过，但是有些卡。</p>
+<p>之前没用过苹果，下]]>
+    </summary>
+    
+      <category term="React Native" scheme="http://tech.cuijie.me/tags/React-Native/"/>
+    
+      <category term="React Native" scheme="http://tech.cuijie.me/categories/React-Native/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Git基本命令]]></title>
     <link href="http://tech.cuijie.me/2015/10/13/Git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
     <id>http://tech.cuijie.me/2015/10/13/Git基本命令/</id>
     <published>2015-10-12T16:36:30.000Z</published>
-    <updated>2015-10-12T16:47:56.000Z</updated>
+    <updated>2015-10-13T13:43:39.000Z</updated>
     <content type="html"><![CDATA[<p>今天看了一个介绍Git使用的<a href="http://www.infoq.com/cn/git-adventures" target="_blank" rel="external">教程</a>，了解了Git的基本操作，下面是记录的一些常用命令。</p>
 <blockquote>
 <p>Git是一个开源的分布式版本控件系统，它的每个工作目录都包含一个完整的仓库，它可以支持离线工作，先把工作提交到本地仓库后再提交上远程的服务器上的仓库里。</p>
 </blockquote>
 <p><strong>工作目录–暂存区–本地仓库</strong></p>
-<p>git-init：在当前的目录下创建一个新的空的本地仓库<br>git-log：查看当前仓库的历史日志<br>git-status：查看当前仓库的状态<br>git-add：把文件加到暂存区<br>git-commit：提交到本地库<br>git diff：查看仓库里未暂存内容和仓库已提交内容的差异<br>git-clone：clone一个远程项目<br>git cat-file -p 2bb9f0  查看文件内容<br>git ls-files –stage 查看缓存区文件<br>git-checkout - Checkout a branch or paths to the working tree 就是取消了工作目录里的修改<br>git branch test 创建分支<br>git checkout test  切换分支<br>git merge test  合并分支</p>
+<p>git-init：在当前的目录下创建一个新的空的本地仓库<br>git-log：查看当前仓库的历史日志<br>git-status：查看当前仓库的状态<br>git-add：把文件加到暂存区<br>git-commit：提交到本地库<br>git diff：查看仓库里未暂存内容和仓库已提交内容的差异<br>git-clone：clone一个远程项目<br>git cat-file -p 2bb9f0：查看文件内容<br>git ls-files –stage：查看缓存区文件<br>git-checkout - Checkout a branch or paths to the working tree 就是取消了工作目录里的修改<br>git branch test 创建分支<br>git checkout test  切换分支<br>git merge test  合并分支</p>
 <blockquote>
 <p>Git 与大部分你熟悉的版本控制系统，如Subversion、CVS、Perforce 之间的差别是很大的。传统系统使用的是： “增量文件系统” （Delta Storage systems），它们存储是每次提交之间的差异。而Git正好与之相反，它是保存的是每次提交的完整内容（snapshot）；它会在提交前根据要提交 的内容求SHA1哈希串值作为对象名，看仓库内是否有相同的对象，如果没有就将在“.git/objects”目录创建对应的对象，如果有就会重用已有的 对象，以节约空间。</p>
 </blockquote>
