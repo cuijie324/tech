@@ -4,14 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Pacman主题修改 | 崔杰的博客</title>
+    <title>2015.10总结 | 崔杰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="cuijie">
     
-    <meta name="description" content="昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。
-下面这两个是有问题的，在作者网站的主题介绍的评论里看到了解决方法。
-头像路径要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的img/author.jpg">
+    <meta name="description" content="10月份结束了，本来说好的写博客，也只坚持了最初的几天，后来慢慢的荒废了。这个月也不是没学东西，但是总是感觉自己学过的，都有人写过了，而且写的很好。而自己一方面理解的不深，另外也没及时整理，过了那段时间，就没心思再去整理了。
+这个月主要在学IOS开发，从头开始，熟悉了OSX系统，也熟悉了Xcode开">
     
     
     
@@ -69,57 +68,55 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/09/Pacman主题修改/" title="Pacman主题修改" itemprop="url">Pacman主题修改</a>
+      <a href="/2015/11/02/2015-10总结/" title="2015.10总结" itemprop="url">2015.10总结</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://tech.cuijie.me" title="cuijie">cuijie</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-10-08T16:10:55.000Z" itemprop="datePublished">2015-10-09</time>
-    更新日期:<time datetime="2015-10-10T16:55:02.000Z" itemprop="dateModified">2015-10-11</time>
+    <time datetime="2015-11-01T16:21:24.000Z" itemprop="datePublished">2015-11-02</time>
+    更新日期:<time datetime="2015-11-01T16:48:56.000Z" itemprop="dateModified">2015-11-02</time>
     
   </p>
 </header>
 		<div class="article-content">
 			
 			
-				<div id="toc" class="toc-article">
-					<strong class="toc-title">文章目录</strong>
-				<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#头像路径"><span class="toc-number">1.</span> <span class="toc-text">头像路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮设置_还没试过"><span class="toc-number">2.</span> <span class="toc-text">代码高亮设置 还没试过</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">3.</span> <span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评论"><span class="toc-number">4.</span> <span class="toc-text">评论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站内搜索"><span class="toc-number">5.</span> <span class="toc-text">站内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站统计"><span class="toc-number">6.</span> <span class="toc-text">网站统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol>
-				</div>
 			
-			
-			<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
-<p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" target="_blank" rel="external">作者网站</a>的主题介绍的评论里看到了解决方法。</p>
-<h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的<code>img/author.jpg</code>被整合查看图片url是<code>css/img/author.jpg</code>，所以加上/就好了。<br>修改方法如下：<br>把<code>author_img: img/author.jpg</code>改成<code>author_img: /img/author.jpg</code></p>
-<h3 id="代码高亮设置_还没试过">代码高亮设置 还没试过</h3><p><code>source/css/_base/variable.styl</code>中找到<code>highlight = hexo-config(&quot;highlight.enable&quot;)</code>注释掉就好了</p>
-<h3 id="RSS">RSS</h3><p>需要安装<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">插件</a>：<code>npm install hexo-generator-feed</code><br>编辑<code>themes/light/_config.yml</code>，修改<code>rss: &quot;/atom.xml&quot;</code></p>
-<h3 id="评论">评论</h3><p>原来的多说评论，代码版本有点旧，更新成了新版的</p>
-<h3 id="站内搜索">站内搜索</h3><p>站内搜索改用<a href="https://swiftype.com" target="_blank" rel="external">swiftype</a></p>
-<h3 id="网站统计">网站统计</h3><p>添加<a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a></p>
-<h3 id="其他">其他</h3><p>分享里去掉了facebook和twitter</p>
-<p>另外，所有js代码都是在after_footer文件里加载的</p>
+			<p>10月份结束了，本来说好的写博客，也只坚持了最初的几天，后来慢慢的荒废了。这个月也不是没学东西，但是总是感觉自己学过的，都有人写过了，而且写的很好。而自己一方面理解的不深，另外也没及时整理，过了那段时间，就没心思再去整理了。</p>
+<p>这个月主要在学IOS开发，从头开始，熟悉了OSX系统，也熟悉了Xcode开发环境，然后按照IOS编程那本书学习。总的来说，感觉IOS开发也没有多少新知识，只是最开始学的时候被OC的语法搞得有点头晕，后来熟悉了之后，有点觉得真像他们说的，OC的语法很优雅，尤其是传递消息的时候，有点朗朗上口的感觉。</p>
+<p>其实IOS开发感觉跟之前接触过的WinForm有点类似，都是事件驱动的，而且都有一些现成的组件可用，很多概念也都是之前学C/C#时就接触过的，可能叫法不同而已。这段时间主要就是在熟悉各个组件的用法，可能是我刚接触，理解还不深吧。</p>
+<p>上个月最大的收获就是IOS开发了，终于接触到移动端的原生开发了。然后就是ASP.NET的理解了，之前的学习都是停留在一个个的知识点上，现在大概能全面的看一些问题了。之前看过的很多书，现在重看感觉有点不一样了。</p>
+<p>这个月的打算：</p>
+<ul>
+<li>IOS编程看完，里面的练习都搞一遍，大概11.15完成。</li>
+<li>React Native开发</li>
+<li>想深入学习下设计模式，之前的学习效果一般般，现在好像又什么都不记得了，而且手上有好几本设计模式的书了：设计模式、敏捷软件开发、ASP.NET设计模式、大话设计模式</li>
+<li>C#语法，有很多还是不熟悉</li>
+</ul>
+<p>我做的计划大都完不成，不过还是要做。</p>
+<p>这个月买了两本新书：《IOS编程》、《启示录》<br>看了14部电影：港囧、异形大战铁血战士1、夏洛特烦恼、九层妖塔、神奇四侠2015版、魔戒1-3、霍比特人1-3、僵尸世界大战、非我、肖申克的救赎</p>
   
 		</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/blog/">blog</a><a href="/tags/hexo/">hexo</a>
+  <span></span> <a href="/tags/总结/">总结</a>
   </div>
 
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/blog/">blog</a>
+  <a class="article-category-link" href="/categories/life/">生活</a>
 </div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://tech.cuijie.me/2015/10/09/Pacman主题修改/" data-title="Pacman主题修改 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
+  <div data-url="http://tech.cuijie.me/2015/11/02/2015-10总结/" data-title="2015.10总结 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
   </div>
 
 </div>
@@ -128,19 +125,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/10/10/个人博客搭建/" title="个人博客搭建">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  个人博客搭建</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/10/08/ASP-NET-MVC学习/"  title="ASP.NET MVC学习">
+<a href="/2015/10/20/React-Native开发初步/"  title="React Native开发初步">
  <strong>NEXT:</strong><br/> 
- <span>ASP.NET MVC学习
+ <span>React Native开发初步
 </span>
 </a>
 </div>
@@ -150,17 +139,12 @@
 	
 	<section class="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="post-Pacman主题修改" data-title="Pacman主题修改" data-url="http://tech.cuijie.me/2015/10/09/Pacman主题修改/"></div>
+		<div class="ds-thread" data-thread-key="post-2015-10总结" data-title="2015.10总结" data-url="http://tech.cuijie.me/2015/11/02/2015-10总结/"></div>
 		<!-- 多说评论框 end -->
 	</section>
 
 </div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#头像路径"><span class="toc-number">1.</span> <span class="toc-text">头像路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码高亮设置_还没试过"><span class="toc-number">2.</span> <span class="toc-text">代码高亮设置 还没试过</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">3.</span> <span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#评论"><span class="toc-number">4.</span> <span class="toc-text">评论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站内搜索"><span class="toc-number">5.</span> <span class="toc-text">站内搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站统计"><span class="toc-number">6.</span> <span class="toc-text">网站统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol>
-  </div>
 
 
 <div id="asidepart">
@@ -273,8 +257,6 @@
 		  m.removeClass('moveMain');
 		  a.css('display', 'block').removeClass('fadeOut');
 		  o.css('display', 'none');
-		  
-			$('#toc.toc-aside').css('display', 'none');
 		    
 		}
 	  });
