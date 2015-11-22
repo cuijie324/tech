@@ -4,7 +4,7 @@
   <subtitle><![CDATA[学习 记录 分享]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://tech.cuijie.me/"/>
-  <updated>2015-11-01T16:48:56.000Z</updated>
+  <updated>2015-11-01T16:48:56.975Z</updated>
   <id>http://tech.cuijie.me/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://tech.cuijie.me/2015/11/02/2015-10%E6%80%BB%E7%BB%93/"/>
     <id>http://tech.cuijie.me/2015/11/02/2015-10总结/</id>
     <published>2015-11-01T16:21:24.000Z</published>
-    <updated>2015-11-01T16:48:56.000Z</updated>
+    <updated>2015-11-01T16:48:56.975Z</updated>
     <content type="html"><![CDATA[<p>10月份结束了，本来说好的写博客，也只坚持了最初的几天，后来慢慢的荒废了。这个月也不是没学东西，但是总是感觉自己学过的，都有人写过了，而且写的很好。而自己一方面理解的不深，另外也没及时整理，过了那段时间，就没心思再去整理了。</p>
 <p>这个月主要在学IOS开发，从头开始，熟悉了OSX系统，也熟悉了Xcode开发环境，然后按照IOS编程那本书学习。总的来说，感觉IOS开发也没有多少新知识，只是最开始学的时候被OC的语法搞得有点头晕，后来熟悉了之后，有点觉得真像他们说的，OC的语法很优雅，尤其是传递消息的时候，有点朗朗上口的感觉。</p>
 <p>其实IOS开发感觉跟之前接触过的WinForm有点类似，都是事件驱动的，而且都有一些现成的组件可用，很多概念也都是之前学C/C#时就接触过的，可能叫法不同而已。这段时间主要就是在熟悉各个组件的用法，可能是我刚接触，理解还不深吧。</p>
@@ -50,7 +50,7 @@
     <link href="http://tech.cuijie.me/2015/10/20/React-Native%E5%BC%80%E5%8F%91%E5%88%9D%E6%AD%A5/"/>
     <id>http://tech.cuijie.me/2015/10/20/React-Native开发初步/</id>
     <published>2015-10-19T16:24:11.000Z</published>
-    <updated>2015-10-19T17:00:35.000Z</updated>
+    <updated>2015-10-19T17:00:35.691Z</updated>
     <content type="html"><![CDATA[<p>今天开始学习React Native开发，记录下自己的学习过程。</p>
 <h3 id="OSX">OSX</h3><p>目前React Native需要在苹果系统上开发，我用的是同事帮忙安装的黑苹果，我自己也在虚拟机上安装过，但是有些卡。</p>
 <p>之前没用过苹果，下面这篇文字介绍了OSX的基本操作：<a href="http://www.cnblogs.com/chijianqiang/archive/2011/08/03/2126593.html" target="_blank" rel="external">开始使用Mac OS X</a>，介绍的还不错。</p>
@@ -87,7 +87,7 @@
     <link href="http://tech.cuijie.me/2015/10/13/Git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
     <id>http://tech.cuijie.me/2015/10/13/Git基本命令/</id>
     <published>2015-10-12T16:36:30.000Z</published>
-    <updated>2015-10-13T13:43:39.000Z</updated>
+    <updated>2015-10-13T13:43:39.375Z</updated>
     <content type="html"><![CDATA[<p>今天看了一个介绍Git使用的<a href="http://www.infoq.com/cn/git-adventures" target="_blank" rel="external">教程</a>，了解了Git的基本操作，下面是记录的一些常用命令。</p>
 <blockquote>
 <p>Git是一个开源的分布式版本控件系统，它的每个工作目录都包含一个完整的仓库，它可以支持离线工作，先把工作提交到本地仓库后再提交上远程的服务器上的仓库里。</p>
@@ -116,7 +116,7 @@
     <link href="http://tech.cuijie.me/2015/10/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     <id>http://tech.cuijie.me/2015/10/10/个人博客搭建/</id>
     <published>2015-10-10T15:28:34.000Z</published>
-    <updated>2015-10-10T16:11:19.000Z</updated>
+    <updated>2015-10-10T16:11:19.371Z</updated>
     <content type="html"><![CDATA[<p>本文主要介绍自己在搭建博客中用到的工具。</p>
 <h3 id="服务器">服务器</h3><p>博客部署在GitHub上，它提供了<a href="https://pages.github.com/" target="_blank" rel="external">Pages</a>功能，很不错，只要有一个GitHub账号就可以了。</p>
 <h3 id="域名">域名</h3><p>在万网注册的，其实用了GitHub <a href="https://pages.github.com/" target="_blank" rel="external">Pages</a>，域名不用也可以。如果用的话，只要在博客根目录放一个CNAME文件就行了。</p>
@@ -145,7 +145,7 @@
     <link href="http://tech.cuijie.me/2015/10/09/Pacman%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/"/>
     <id>http://tech.cuijie.me/2015/10/09/Pacman主题修改/</id>
     <published>2015-10-08T16:10:55.000Z</published>
-    <updated>2015-10-10T16:55:02.000Z</updated>
+    <updated>2015-10-10T16:55:02.429Z</updated>
     <content type="html"><![CDATA[<p>昨天刚弄好博客，但是模版还有一些问题，今天修改了一下，有些都是别人分享过的，直接拿过来了。</p>
 <p>下面这两个是有问题的，在<a href="http://yangjian.me/pacman/hello/introducing-pacman-theme/" target="_blank" rel="external">作者网站</a>的主题介绍的评论里看到了解决方法。</p>
 <h3 id="头像路径">头像路径</h3><p>要把头像弄出来，需要在路径上加上/。因为查看页面源码是用css的background实现的，默认代码里的<code>img/author.jpg</code>被整合查看图片url是<code>css/img/author.jpg</code>，所以加上/就好了。<br>修改方法如下：<br>把<code>author_img: img/author.jpg</code>改成<code>author_img: /img/author.jpg</code></p>
@@ -175,7 +175,7 @@
     <link href="http://tech.cuijie.me/2015/10/08/ASP-NET-MVC%E5%AD%A6%E4%B9%A0/"/>
     <id>http://tech.cuijie.me/2015/10/08/ASP-NET-MVC学习/</id>
     <published>2015-10-07T16:09:30.000Z</published>
-    <updated>2015-10-12T16:49:52.000Z</updated>
+    <updated>2015-10-12T16:49:52.621Z</updated>
     <content type="html"><![CDATA[<p>十一假期主要在看MVC高级编程，感觉对MVC的认识更深入了。</p>
 <p>ASP.NET MVC就是把MVC模式应用在ASP.NET框架之上的一个Web框架，主要用来创建网站应用。</p>
 <p>根据我的认识，这是一个服务器端MVC，在服务器端渲染好页面后，把整个页面返回给前端展示。而且它的模版、视图、控制器都是密切合作的，而且看了很多章之后，感觉即使不用js也可以创建一个网站了。</p>
