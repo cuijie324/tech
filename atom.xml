@@ -4,7 +4,7 @@
   <subtitle><![CDATA[学习 记录 分享]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://tech.cuijie.me/"/>
-  <updated>2015-11-01T16:48:56.975Z</updated>
+  <updated>2015-12-07T15:38:42.928Z</updated>
   <id>http://tech.cuijie.me/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[2015.11总结]]></title>
+    <link href="http://tech.cuijie.me/2015/12/07/2015-11%E6%80%BB%E7%BB%93/"/>
+    <id>http://tech.cuijie.me/2015/12/07/2015-11总结/</id>
+    <published>2015-12-07T15:19:16.000Z</published>
+    <updated>2015-12-07T15:38:42.928Z</updated>
+    <content type="html"><![CDATA[<p>工作之后，时间过得真快，今天刚买好火车票，马上又要回家了。然后上个月又没干成什么，就这样一个月又过去了。</p>
+<p>这个月本来说要学IOS开发的，不过当我看懂OC的代码后，就没怎么看了，然后就一直在写React Native的项目，现在项目基本完工了。其他的也没学什么。</p>
+<p>我就发现自己做事总是浅尝辄止，什么都想学，但一般学了一点，刚入门就又去学别的了，这样什么都没学会。</p>
+<p>这个月最大的收获就是看了《数学之美》，感觉特别好，如果在大学时看过这个书就好了，然后推荐给了几个师弟师妹。全书大概看了一遍，好多公式都略过了，以前学的那些随机过程、矩阵计算都不记得了，不过终于知道了以前学的那些数学有什么用，以后也要继续学习数学。</p>
+<p>还有两个月就要回家了，这段时间就是想系统的学一下设计模式，上个月也说了。有时间就总结一下React Native开发中遇到的问题。</p>
+<p>这个月双十一时买了三本新书：《数学之美》、《Javascript函数式编程》、《React Native开发》，最后一本书有点水，函数式编程还没怎么看。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>工作之后，时间过得真快，今天刚买好火车票，马上又要回家了。然后上个月又没干成什么，就这样一个月又过去了。</p>
+<p>这个月本来说要学IOS开发的，不过当我看懂OC的代码后，就没怎么看了，然后就一直在写React Native的项目，现在项目基本完工了。其他的也没学什么。]]>
+    </summary>
+    
+      <category term="总结" scheme="http://tech.cuijie.me/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="生活" scheme="http://tech.cuijie.me/categories/life/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[2015.10总结]]></title>
