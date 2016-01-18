@@ -1,16 +1,18 @@
 
-  
-    <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
-    <title>关于我 | 崔杰的博客</title>
+    <title>Docker学习笔记-构建环境 | 崔杰的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="cuijie">
     
-    <meta name="description" content="学习 记录 分享">
+    <meta name="description" content="最近这半个月在看Docker，还申请了一个订阅号，不过感觉自己就是在瞎搞。
+之前因为网速的原因，学习的过程特别痛苦，尤其是构建镜像时，基本都等半天，然后还不成功。
+然后今天找到了一个新方法：
+就是在github上创建Dockerfile文件，然后在daocloud上生成镜像，最后下载到本地运行，这样">
     
     
     
@@ -27,9 +29,9 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-      <body>
-        <header>
-          <div>
+  <body>
+    <header>
+      <div>
 	
 		<div id="imglogo">
 			<a href="/"><img src="/img/logo.svg" alt="崔杰的博客" title="崔杰的博客"/></a>
@@ -63,93 +65,155 @@
 	</nav>
 </div>
 
-        </header>
-        <div id="container">
-          <div id="main" class="page" itemscope itemprop="blogPost">
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/about/index.html" title="关于我" itemprop="url">关于我</a>
+      <a href="/2016/01/18/Docker学习笔记-构建环境/" title="Docker学习笔记-构建环境" itemprop="url">Docker学习笔记-构建环境</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://tech.cuijie.me" title="cuijie">cuijie</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-11-10T16:49:17.000Z" itemprop="datePublished">2015-11-11</time>
-    更新日期:<time datetime="2015-11-22T16:48:16.059Z" itemprop="dateModified">2015-11-23</time>
+    <time datetime="2016-01-18T15:32:32.000Z" itemprop="datePublished">2016-01-18</time>
+    更新日期:<time datetime="2016-01-18T15:39:42.599Z" itemprop="dateModified">2016-01-18</time>
     
   </p>
 </header>
 		<div class="article-content">
 			
 			
+				<div id="toc" class="toc-article">
+					<strong class="toc-title">文章目录</strong>
+				
+				</div>
 			
-			<p>程序员，目前这段时间主要在学习React Native和IOS开发，在广州。</p>
-<p>我熟悉：</p>
-<ul>
-<li>React、React Native</li>
-<li>C#、ASP.NET</li>
-<li>JavaScript</li>
-<li>JQuery、Zepto</li>
-<li>AngularJS</li>
-<li>Redis、MySQL</li>
-<li>C、C++(下面这几个曾经熟悉)</li>
-<li>ZigBee(ZStack)</li>
-<li>Contiki</li>
-</ul>
-<p>我略懂：</p>
-<ul>
-<li>DDD</li>
-<li>CQRS</li>
-<li>BI</li>
-<li>Solr</li>
-<li>RabbitMQ</li>
-</ul>
-<p>想深入学习：</p>
-<ul>
-<li>设计模式</li>
-<li>架构</li>
-<li>函数式编程</li>
-<li>持续集成、持续交付</li>
-</ul>
-<p>平常没事的时候就喜欢看电影，一般看科幻的，然后是美剧，我看过的片超多~~<br>目前在追的美剧：</p>
-<ul>
-<li>生活大爆炸</li>
-<li>硅谷</li>
-<li>纸牌屋</li>
-<li>权力的游戏</li>
-<li>蛇蝎女佣</li>
-<li>摩登家庭</li>
-<li>僵尸国度</li>
-</ul>
+			
+			<p>最近这半个月在看Docker，还申请了一个订阅号，不过感觉自己就是在瞎搞。</p>
+<p>之前因为网速的原因，学习的过程特别痛苦，尤其是构建镜像时，基本都等半天，然后还不成功。</p>
+<p>然后今天找到了一个新方法：</p>
+<p>就是在github上创建Dockerfile文件，然后在daocloud上生成镜像，最后下载到本地运行，这样很快，而且代码可以保存在github上，一举多得，哈哈</p>
+<p>而且DaoCloud有镜像加速功能，下载很快，这是它的官网：<a href="https://www.daocloud.io/。" target="_blank" rel="external">https://www.daocloud.io/。</a></p>
+<p>CentOS 6安装镜像加速</p>
+<blockquote>
+<p>sudo sed -i “s|other_args=\”|other_args=\”–registry-mirror=<a href="http://4f0cef54.m.daocloud.io" target="_blank" rel="external">http://4f0cef54.m.daocloud.io</a> |g” /etc/sysconfig/docker<br>sudo sed -i “s|OPTIONS=’|OPTIONS=’–registry-mirror=<a href="http://4f0cef54.m.daocloud.io" target="_blank" rel="external">http://4f0cef54.m.daocloud.io</a> |g” /etc/sysconfig/docker<br>sudo service docker restart</p>
+</blockquote>
+<p>该脚本可以将–registry-mirror加入到你的Docker配置文件/etc/sysconfig/docker中。</p>
   
 		</div>
 		<footer class="article-footer clearfix">
 
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/认识Docker/">认识Docker</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Docker/">Docker</a>
+</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://tech.cuijie.me/about/index.html" data-title="关于我 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
+  <div data-url="http://tech.cuijie.me/2016/01/18/Docker学习笔记-构建环境/" data-title="Docker学习笔记-构建环境 | 崔杰的博客" data-tsina="1876057311" class="share clearfix">
   </div>
 
 </div>
 </footer>   	       
 	</article>
 	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/12/07/2015-11总结/"  title="2015.11总结">
+ <strong>NEXT:</strong><br/> 
+ <span>2015.11总结
+</span>
+</a>
+</div>
+
+</nav>
+
 	
 	<section class="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="page-undefined" data-title="关于我" data-url="http://tech.cuijie.me/about/index.html"></div>
+		<div class="ds-thread" data-thread-key="post-Docker学习笔记-构建环境" data-title="Docker学习笔记-构建环境" data-url="http://tech.cuijie.me/2016/01/18/Docker学习笔记-构建环境/"></div>
 		<!-- 多说评论框 end -->
 	</section>
 
 </div>  
-        </div>
-        <footer><div id="footer" >
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  
+  </div>
+
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/ASP-NET-MVC/" title="ASP.NET MVC">ASP.NET MVC<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Docker/" title="Docker">Docker<sup>1</sup></a></li>
+		
+			<li><a href="/categories/React-Native/" title="React Native">React Native<sup>1</sup></a></li>
+		
+			<li><a href="/categories/blog/" title="blog">blog<sup>2</sup></a></li>
+		
+			<li><a href="/categories/开发工具/" title="开发工具">开发工具<sup>1</sup></a></li>
+		
+			<li><a href="/categories/life/" title="生活">生活<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Git/" title="Git">Git<sup>1</sup></a></li>
+		
+			<li><a href="/tags/React-Native/" title="React Native">React Native<sup>1</sup></a></li>
+		
+			<li><a href="/tags/blog/" title="blog">blog<sup>2</sup></a></li>
+		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
+		
+			<li><a href="/tags/总结/" title="总结">总结<sup>2</sup></a></li>
+		
+			<li><a href="/tags/版本控制/" title="版本控制">版本控制<sup>1</sup></a></li>
+		
+			<li><a href="/tags/认识Docker/" title="认识Docker">认识Docker<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -180,7 +244,7 @@
 		</p>
 </div>
 </footer>
-        <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/jquery-2.1.0.min.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function(){ 
@@ -208,6 +272,8 @@
 		  m.removeClass('moveMain');
 		  a.css('display', 'block').removeClass('fadeOut');
 		  o.css('display', 'none');
+		  
+			$('#toc.toc-aside').css('display', 'none');
 		    
 		}
 	  });
@@ -227,6 +293,39 @@
 	});
 </script>
 
+
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+		  var ai = $('.article-content>iframe'),
+			  ae = $('.article-content>embed'),
+			  t  = $('#toc'),
+			  h  = $('article h2')
+			  ah = $('article h2'),
+			  ta = $('#toc.toc-aside'),
+			  o  = $('.openaside'),
+			  c  = $('.closeaside');
+		  if(ai.length>0){
+			ai.wrap('<div class="video-container" />');
+		  };
+		  if(ae.length>0){
+		   ae.wrap('<div class="video-container" />');
+		  };
+		  if(ah.length==0){
+		    //这里打开，显示文字目录 2015.10.11
+			//t.css('display','none');
+		  }else{
+			c.click(function(){
+			  ta.css('display', 'block').addClass('fadeIn');
+			});
+			o.click(function(){
+			  ta.css('display', 'none');
+			});
+			$(window).scroll(function(){
+			  ta.css("top",Math.max(140,320-$(this).scrollTop()));
+			});
+		  };
+		});
+	</script>
 
 
 
@@ -301,7 +400,6 @@
 	</script>	
 
 
-      </body>
-     </html>
-     
+  </body>
+</html>
 

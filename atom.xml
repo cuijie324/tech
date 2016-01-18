@@ -4,7 +4,7 @@
   <subtitle><![CDATA[学习 记录 分享]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://tech.cuijie.me/"/>
-  <updated>2015-12-07T15:38:42.928Z</updated>
+  <updated>2016-01-18T15:39:42.599Z</updated>
   <id>http://tech.cuijie.me/</id>
   
   <author>
@@ -13,6 +13,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Docker学习笔记-构建环境]]></title>
+    <link href="http://tech.cuijie.me/2016/01/18/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E6%9E%84%E5%BB%BA%E7%8E%AF%E5%A2%83/"/>
+    <id>http://tech.cuijie.me/2016/01/18/Docker学习笔记-构建环境/</id>
+    <published>2016-01-18T15:32:32.000Z</published>
+    <updated>2016-01-18T15:39:42.599Z</updated>
+    <content type="html"><![CDATA[<p>最近这半个月在看Docker，还申请了一个订阅号，不过感觉自己就是在瞎搞。</p>
+<p>之前因为网速的原因，学习的过程特别痛苦，尤其是构建镜像时，基本都等半天，然后还不成功。</p>
+<p>然后今天找到了一个新方法：</p>
+<p>就是在github上创建Dockerfile文件，然后在daocloud上生成镜像，最后下载到本地运行，这样很快，而且代码可以保存在github上，一举多得，哈哈</p>
+<p>而且DaoCloud有镜像加速功能，下载很快，这是它的官网：<a href="https://www.daocloud.io/。" target="_blank" rel="external">https://www.daocloud.io/。</a></p>
+<p>CentOS 6安装镜像加速</p>
+<blockquote>
+<p>sudo sed -i “s|other_args=\”|other_args=\”–registry-mirror=<a href="http://4f0cef54.m.daocloud.io" target="_blank" rel="external">http://4f0cef54.m.daocloud.io</a> |g” /etc/sysconfig/docker<br>sudo sed -i “s|OPTIONS=’|OPTIONS=’–registry-mirror=<a href="http://4f0cef54.m.daocloud.io" target="_blank" rel="external">http://4f0cef54.m.daocloud.io</a> |g” /etc/sysconfig/docker<br>sudo service docker restart</p>
+</blockquote>
+<p>该脚本可以将–registry-mirror加入到你的Docker配置文件/etc/sysconfig/docker中。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近这半个月在看Docker，还申请了一个订阅号，不过感觉自己就是在瞎搞。</p>
+<p>之前因为网速的原因，学习的过程特别痛苦，尤其是构建镜像时，基本都等半天，然后还不成功。</p>
+<p>然后今天找到了一个新方法：</p>
+<p>就是在github上创建Dockerfi]]>
+    </summary>
+    
+      <category term="认识Docker" scheme="http://tech.cuijie.me/tags/%E8%AE%A4%E8%AF%86Docker/"/>
+    
+      <category term="Docker" scheme="http://tech.cuijie.me/categories/Docker/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[2015.11总结]]></title>
